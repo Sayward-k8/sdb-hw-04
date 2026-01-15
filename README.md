@@ -8,6 +8,7 @@
 # Решение 1
 
 <details>
+Я что-то не сделал скриншот в самом начале, поэтому скриншот с кластером
 
 ![alt text](https://github.com/Sayward-k8/sdb-hw-04/blob/main/img/1.png)
 
@@ -64,6 +65,12 @@ $ rabbitmqadmin get queue='hello'
 # Решение 3
 
 <details>
+Выполнил команду  docker exec rabbitmq1 rabbitmqctl cluster_status на каждой ноде:
+  
+![alt text](https://github.com/Sayward-k8/sdb-hw-04/blob/main/img/3.1.png)
+![alt text](https://github.com/Sayward-k8/sdb-hw-04/blob/main/img/3.2.png)
+![alt text](https://github.com/Sayward-k8/sdb-hw-04/blob/main/img/3.3.png)
+![alt text](https://github.com/Sayward-k8/sdb-hw-04/blob/main/img/3.4.png)
 
 </details> 
 
