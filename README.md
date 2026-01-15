@@ -9,6 +9,8 @@
 
 <details>
 
+![alt text](https://github.com/Sayward-k8/sdb-hw-04/blob/main/img/1.png)
+
 </details> 
 
 
@@ -27,6 +29,10 @@ $ pip install pika
 # Решение 2
 
 <details>
+
+![alt text](https://github.com/Sayward-k8/sdb-hw-04/blob/main/img/2.1.png)
+![alt text](https://github.com/Sayward-k8/sdb-hw-04/blob/main/img/2.2.png)
+![alt text](https://github.com/Sayward-k8/sdb-hw-04/blob/main/img/2.3.png)
 
 </details> 
 
