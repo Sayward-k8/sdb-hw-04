@@ -65,17 +65,24 @@ $ rabbitmqadmin get queue='hello'
 # Решение 3
 
 <details>
-Выполнил команду  docker exec rabbitmq1 rabbitmqctl cluster_status на каждой ноде:
-  
-![alt text](https://github.com/Sayward-k8/sdb-hw-04/blob/main/img/3.1.png)
+Выполнил команду  `docker exec rabbitmq1 rabbitmqctl cluster_status` на каждой ноде:  
+
+  ![alt text](https://github.com/Sayward-k8/sdb-hw-04/blob/main/img/3.1.png)
+
+Выполнил команду `docker exec rabbitmq1 rabbitmqadmin -u vigonin -p test123 get queue='hello' count=1`
+
 ![alt text](https://github.com/Sayward-k8/sdb-hw-04/blob/main/img/3.2.png)
+
+
+Выполнил команды
+`docker exec rabbitmq1 rabbitmqctl list_queues name messages messages_ready`
+`docker exec rabbitmq2 rabbitmqctl list_queues name messages messages_ready`
+
 ![alt text](https://github.com/Sayward-k8/sdb-hw-04/blob/main/img/3.3.png)
 ![alt text](https://github.com/Sayward-k8/sdb-hw-04/blob/main/img/3.4.png)
 
 </details> 
 
-Дополнительные задания (со звёздочкой*)
-Эти задания дополнительные, то есть не обязательные к выполнению, и никак не повлияют на получение вами зачёта по этому домашнему заданию. Вы можете их выполнить, если хотите глубже шире разобраться в материале.
 
 # * Задание 4. Ansible playbook
 Напишите плейбук, который будет производить установку RabbitMQ на любое количество нод и объединять их в кластер. При этом будет автоматически создавать политику ha-all.
