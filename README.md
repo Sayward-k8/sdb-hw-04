@@ -69,7 +69,7 @@ $ rabbitmqadmin get queue='hello'
 
   ![alt text](https://github.com/Sayward-k8/sdb-hw-04/blob/main/img/3.1.png)
 
-Выполнил команду `docker exec rabbitmq1 rabbitmqadmin -u vigonin -p test123 get queue='hello' count=1`
+Выполнил команду `docker exec rabbitmq1 rabbitmqadmin -u vigonin -p test123 get queue='hello' count=1` `docker exec rabbitmq2 rabbitmqadmin -u vigonin -p test123 get queue='hello' count=1`
 
 ![alt text](https://github.com/Sayward-k8/sdb-hw-04/blob/main/img/3.2.png)
 
